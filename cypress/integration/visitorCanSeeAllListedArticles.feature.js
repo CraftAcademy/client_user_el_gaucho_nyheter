@@ -16,6 +16,7 @@ describe("Visitor can see articles", () => {
       cy.contains(
         "Ny studie: Möjligt att utplåna fattigdomen och samtidigt rädda klimatet"
       );
+      cy.get("[data-cy='image']").should("be.visible")
     });
   });
   it("shows second article", () => {

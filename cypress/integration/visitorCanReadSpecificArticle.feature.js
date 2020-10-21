@@ -23,6 +23,7 @@ describe("Visitor can read a specific article", () => {
         "contain",
         "Det är fullt möjligt att rädda jordens klimat och utplåna fattigdomen"
       );
+      cy.get("[data-cy='image']").should("be.visible")
     });
   });
   context("unsuccessfully", () => {
